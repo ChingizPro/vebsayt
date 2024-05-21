@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.big {
+    padding: 30px 60px;
+}
+.title {
+    margin-bottom: 17px;
+    font-size: 30px;
+}
+.icon {
+    font-size: 20px;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.box {
+    width: 49%;
+    border: 3px solid black;
+    padding: 20px;
+}
+.content1, .content2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content1 {
+    margin-bottom: 15px;
+}
+.content2 {
+    align-items: center;
+}
+.textbox {
+    width: 55%;
+}
+.image {
+    width: 40%;
+}
+.link, .btn {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+.btn {
+    background-color: transparent;
+    font-size: 27px;
+    padding: 12px 17px;
+}
+.p {
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width:1064px){
+    .box {
+        width: 100%;
+    }
+    .box:first-of-type {
+        margin-bottom: 25px;
+    }
+}
+@media(max-width:667px){
+    .big {
+        padding: 15px;
+    }
+}
+@media(max-width:505px){
+    .image, .textbox, .p {
+        width: 100%;
+    }
+}
